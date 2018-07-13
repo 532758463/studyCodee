@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.one{
+	width: 200px;
+	height: 200px;
+	background: green;
+	color: #fff;
+	position: relative;
+	left: 20px;
+	/*top: 20px;*/
+	/*bottom: 20px;*/
+}
+.two{
+	width: 200px;
+	height: 200px;
+	background: red;
+	position: relative;
+	/*position: relative;*/
+	left: 100px;
+	/*right: 0px;*/
+	/*top: 50px;*/
+	top: 20px;
+	z-index: 2;
+}
+/*left的优先级高于right,有left时，right的值不会生效
+  top的优先级高于bottom，有top时，bottom的值不会生效
+*/
+.two .two-one{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+	color: #fff;
+	/*left: 25px;*/
+	left: 80%;
+	/*top: 10%;*/
+	top: 115px;
+	padding-top: 5px;
+}
+/*总结：position：absolute;
+		如果父级没有定位，则该子元素会相对于body定位
+	    绝对定位是相对于父级定位
+	*/
+.three{
+	width: 60px;
+	height: 60px;
+	background-color: blue;
+	position: relative;
+	left: 90px;
+	top: -15px;
+}
+.content{
+	height: 500px;
+	width: 1200px;
+}
+.header{
+	width: 1200px;
+	height: 200px;
+	background: yellow;
+	position: fixed;
+	/*z-index: 2;*/
+}
