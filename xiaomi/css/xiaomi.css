@@ -13,15 +13,28 @@ a{
 }
 /*小米首页头部*/
 .header{
+
+	position: relative;
+}
+.header>img{
+	display: block;
+	width: 1366px;
+	height: 120px;
+}
+.header-one{
 	width: 100%;
 	height: 40px;
-	background: #333;
-	margin: 0 auto;
+	background: #333;	
+	/*margin-top: 120px;*/
 }
-.header-one{width: 1226px;}
+.header-one_o{
+	width: 1349px;
+	height: 40px;
+}
 .left{
 	float: left;
-	margin-left: 50px;
+	margin-left: 53px;
+
 }
 .right{
 	float: right;
@@ -50,12 +63,11 @@ a{
 
 /*导航部分*/
 .container{
-	width: 1226px;
+	width: 1330px;
 	height: 100px;
-
 }
 .container .nav{
-	width: 1321px;
+	width: 1349px;
 	height: 100px;
 	position: relative;
 }
@@ -92,8 +104,8 @@ a{
 	width: 245px;
 	height: 50px;
 	position: absolute;
-    top: 56px;
-    right: 145px;
+	top: 20px;
+    right: 128px;
 }
 input:focus{
 	outline:none;
@@ -106,8 +118,8 @@ input:focus{
     height: 52px;
     color: #616161;
     position: absolute;
-    top: 56px;
-    right: 91px;
+    top: 20px;
+    right: 74px;
     text-align: center;
 	border: 1px solid #ccc;
 }
@@ -123,7 +135,7 @@ input:focus{
 /*内容区部分*/
 /*内容区内的清单部分*/
 .content{
-	width: 1226px;
+	width: 1330px;
 	height: 460px;
 	position: relative;	
 }
@@ -203,7 +215,7 @@ input:focus{
 /*图片里面的切换按钮样式*/
 .btn ul{
 	position: absolute;
-    right: 36px;
+    right: 80px;
     bottom: 22px;
  }
 .btn ul li{
@@ -229,7 +241,7 @@ input:focus{
 	position: absolute;
 	background: #5f5750;
 	top: 0;
-	left: 57px;
+	left: 7px;
 }
 .section-one .tubiao ul{
 	width: 234px;
@@ -264,7 +276,7 @@ input:focus{
 	position: absolute;
 	width: 1006px;
 	height: 170px;
-	left:289px
+	left: 237px;
 }
 .ul-img li{
 	float: left;
@@ -274,4 +286,169 @@ input:focus{
 	width: 316px;
     height: 170px;
 
+}
+/*content下的导航部分*/
+/*.section-two{
+	width: 1226px;
+	height: 58px;
+	margin-top: 20px;
+	margin-left: 111px;
+}
+.section-two .title{
+	float: left;
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 58px;
+}
+.section-two ul{
+	float: right;
+}
+.section-two ul li{
+	float: left;
+	line-height: 58px;
+	height: 46px;
+	margin-left: 30px;
+	cursor: pointer;
+	
+}
+.section-two ul li:hover{
+	color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}*/
+.section-two{
+	width: 100%;
+	margin-top: 26px;
+	
+}
+.title{
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 58px;
+}
+.section-two .warp{
+	width: 1226px;
+	height: 58px;
+	position: relative;
+}
+.section-two ul{
+	position: absolute;
+	right: 0;
+	top: 22px;
+}
+
+.section-two ul li{
+	float: left;
+	width: 36px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #ccc;
+	text-align: center;
+	color:#999;
+	font-weight: bold;
+}
+.section-two ul i{
+	
+}
+.active-one{
+	color: #ccc;
+}
+/*第三栏闪购部分*/
+.section-three{
+	width: 1240px;
+}
+.section-three .time{
+	float: left;
+	width: 234px;
+	height: 339px;
+	background: #f1eded;
+	text-align: center;
+	border-top: 1px solid #e53935;
+	/*margin-right: 14px;*/
+}
+.section-three .time span{
+	display: block;
+	font-size: 21px;
+    color: #ef3a3b;
+    padding-top: 45px;	
+}
+.section-three .time img{
+	padding: 30px 0 25px 0;
+}
+.section-three .time p{
+	color: rgba(0,0,0,0.54);
+    font-size: 15px;
+}
+.section-three .time ul{
+	width: 180px;
+ 	margin: 30px auto;
+}
+.section-three .time ul li{
+	float: left;
+	text-align: center;
+	height: 46px;
+	line-height: 46px;
+}
+.section-three .time ul .tnum{
+	width: 46px;
+	background:#605751;
+	font-size: 24px;
+}
+.section-three .time ul .mao{
+	width: 15px;	
+	font-size: 28px;
+}
+.img-menu{
+	float: right;	
+	
+}
+.img-menu ul{
+	width: 992px;
+	height: 338px;
+}
+.img-menu li{
+	width: 234px;
+	height: 339px;
+	background: rgba(0,0,0,0.02);
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	margin-left: 14px;
+}
+.img-menu li img{
+	width: 160px;
+	height: 166px;
+	padding-bottom: 50px;
+}
+.img-menu li h3{
+	font-size: 14px;
+    color: #212121;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.img-menu li .min{
+	font-size: 12px;
+	color: #b0b0b0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.img-menu li .price{
+	color: #ff6709;
+	font-size: 14px;
+}
+.img-menu li .price span{
+	color: #b0b0b0;
+	text-decoration: line-through;
+}
+.img-menu .menu-one{
+	border-top: 1px solid #ffac13;
+}
+.img-menu .menu-two{
+	border-top: 1px solid #83c44e;
+}
+.img-menu .menu-three{
+	border-top: 1px solid #2196f3;
+}
+.img-menu .menu-four{
+	border-top: 1px solid #e53935;
 }
