@@ -1,77 +1,78 @@
-*{
+@charset 'UTF-8';
+* {
 	margin: 0;
 	padding: 0;
 }
-ul{
+ul {
 	list-style: none;
 }
-a{
+a {
 	text-decoration: none;
 }
-.center{
+.center {
 	margin: 0 auto;
 }
 /*小米首页头部*/
-.header{
+.header {
 
 	position: relative;
 }
-.header>img{
+.header>img {
 	display: block;
 	width: 1366px;
 	height: 120px;
 }
-.header-one{
+.header-one {
 	width: 100%;
 	height: 40px;
 	background: #333;	
 	/*margin-top: 120px;*/
 }
-.header-one_o{
+.header-one_o {
 	width: 1349px;
 	height: 40px;
 }
-.left{
+.left {
 	float: left;
 	margin-left: 53px;
 
 }
-.right{
+.right {
 	float: right;
 	margin-right: 70px;
 }
-.header li{
+.header li {
 	float: left;
 	line-height: 40px;
 	padding-left: 5px;
 	
 }
-.header li a{
+.header li a {
 	color: #b0b0b0;
 	font-size: 10px;
 }
-.header li a:hover{
+.header li a:hover {
 	color: #fff;
 }
-.right li{
+.right li {
 	padding-right: 15px;
 }
-.line{
+.line {
 	color: #424242;;
 }
 
 
 /*导航部分*/
-.container{
+.container {
 	width: 1330px;
 	height: 100px;
 }
-.container .nav{
+.container .nav {
 	width: 1349px;
 	height: 100px;
 	position: relative;
 }
-.container .nav img{
+.container .nav img {
 	display: block;
 	background: #ff6700;
 	width: 55px;
@@ -80,39 +81,39 @@ a{
     left: 50px;
     top: 20px;
 }
-.container ul{
+.container ul {
 	width: 850px;
 	height: 100px;
 	float: left;
 	margin-left: 200px;
 }
-.container .nav li{
+.container .nav li {
 	float: left;
 	margin-left: 20px;
 	height: 88px;
 	text-align:center;
 }
-.container .nav li a{
+.container .nav li a {
 	line-height: 88px;
 	color: #333;
 	font-size: 16px;
 }
-.container .nav li a:hover{
+.container .nav li a:hover {
 	color:#ff6700;;
 }
-.container input{
+.container input {
 	width: 245px;
 	height: 50px;
 	position: absolute;
 	top: 20px;
     right: 128px;
 }
-input:focus{
+input:focus {
 	outline:none;
     border: 1px solid #ff6700;
     color:  #ff6700;
 }
-.container span{
+.container span {
     display: block;
     width: 53px;
     height: 52px;
@@ -123,47 +124,47 @@ input:focus{
     text-align: center;
 	border: 1px solid #ccc;
 }
-.container span i{
+.container span i {
 	font-size: 30px;
 	font-weight: lighter;
 	line-height: 54px;
 }
-.container span:hover{
+.container span:hover {
 	background: #ff6700;
 }
 
 /*内容区部分*/
 /*内容区内的清单部分*/
-.content{
+.content {
 	width: 1330px;
 	height: 460px;
 	position: relative;	
 }
-.menu{
+.menu {
 	width: 234px;
 	position: absolute;
 }
-.menu ul{
+.menu ul {
     width: 100%;
     height: 450px;
     background: rgba(0,0,0,0.6);
     padding-top: 10px;
 }
-.menu li{
+.menu li {
 	width: 234px;
 	height: 40px;
 	text-indent: 15px;
 }
-.menu li:hover{
+.menu li:hover {
 	background: #ff6700;
 }
-.menu li a{
+.menu li a {
 	color: #fff;
 	font-size: 14px;
 	line-height: 40px;
 	position: relative;
 }
-.menu li a i{
+.menu li a i {
 	font-size: 12px;
 	position: absolute;
 	left: 170px;
@@ -171,54 +172,54 @@ input:focus{
 }
 
 /*content下的图片banner部分*/
-.banner{
+.banner {
 	position: absolute;
 	left: 284px;
 }
-.banner img{
+.banner img {
 	display:block;
 	width: 993px;
 	height: 460px;
 	float: left;
 }
-.banner .none{
+.banner .none {
 	display: none;
 }
-.banner .active{
+.banner .active {
 	display: block;
 }
-.banner span{
+.banner span {
 	width: 41px;
 	height: 69px;
 	background: rgba(255,255,255,.1);
 	cursor: pointer;
 }
-.banner .arrow-left{
+.banner .arrow-left {
 	position: absolute;
 	top: 200px;
 	left: 0;
 }
-.banner .arrow-right{
+.banner .arrow-right {
 	position: absolute;
 	top: 200px;
 	right: 0px;
 }
-.banner span i{
+.banner span i {
 	line-height: 69px;
 	font-size: 35px;
 	text-align: center;
 	color: #757575;
 }
-.banner span:hover{
+.banner span:hover {
 	background: rgba(0,0,0,0.4);
 }
 /*图片里面的切换按钮样式*/
-.btn ul{
+.btn ul {
 	position: absolute;
     right: 80px;
     bottom: 22px;
  }
-.btn ul li{
+.btn ul li {
 	width: 7px;
 	height: 7px;
 	float: left;
@@ -231,112 +232,112 @@ input:focus{
 }
 
 /*第二页第一栏部分*/
-.section-one{
+.section-one {
 	position: relative;	
 	width: 1240px;
 	height: 170px;
 	margin-top: 14px;
 }
-.section-one .tubiao{
+.section-one .tubiao {
 	position: absolute;
 	background: #5f5750;
 	top: 0;
 	left: 7px;
 }
-.section-one .tubiao ul{
+.section-one .tubiao ul {
 	width: 234px;
 	height: 170px;
 
 }
-.section-one .tubiao li{
+.section-one .tubiao li {
 	float: left;
 	width: 76px;
 	height: 82px;	
 	text-align: center;
 	border:1px solid #665e57;
 }
-.section-one .tubiao li i:hover{
+.section-one .tubiao li i:hover {
 	color: #fff;
 }
-.section-one .tubiao li i{
+.section-one .tubiao li i {
 	display: block;
 	font-size: 24px;
 	color: rgba(255,255,255,0.7);
 	padding-top: 12px;
 }
-.section-one .tubiao li a{
+.section-one .tubiao li a {
 	font-size: 12px;
 	color: rgba(255,255,255,0.7);
 }
-.section-one .tubiao li i a:hover{
+.section-one .tubiao li i a:hover {
 	color: #fff;
 }
 
-.ul-img{
+.ul-img {
 	position: absolute;
 	width: 1006px;
 	height: 170px;
 	left: 237px;
+	cursor: pointer;
 }
-.ul-img li{
+.ul-img li {
 	float: left;
 	margin-left: 16px;
 }
-.ul-img li img{
+.ul-img li img {
 	width: 316px;
     height: 170px;
 
 }
 /*content下的导航部分*/
-/*.section-two{
+/*.text {
 	width: 1226px;
 	height: 58px;
 	margin-top: 20px;
 	margin-left: 111px;
 }
-.section-two .title{
+.text .title {
 	float: left;
 	font-size: 22px;
 	font-weight: 200;
 	line-height: 58px;
 }
-.section-two ul{
+.text ul {
 	float: right;
 }
-.section-two ul li{
+.text ul li {
 	float: left;
 	line-height: 58px;
 	height: 46px;
 	margin-left: 30px;
-	cursor: pointer;
-	
+	cursor: pointer;	
 }
-.section-two ul li:hover{
+.text ul li:hover {
 	color: #ff6700;
     border-bottom: 2px solid #ff6700;
 }*/
-.section-two{
+.section-two {
 	width: 100%;
 	margin-top: 26px;
 	
 }
-.title{
+.title {
 	font-size: 22px;
 	font-weight: 200;
 	line-height: 58px;
 }
-.section-two .warp{
+.section-two .warp {
 	width: 1226px;
 	height: 58px;
 	position: relative;
 }
-.section-two ul{
+.section-two ul {
 	position: absolute;
 	right: 0;
 	top: 22px;
 }
 
-.section-two ul li{
+.section-two ul li {
 	float: left;
 	width: 36px;
 	height: 24px;
@@ -346,17 +347,17 @@ input:focus{
 	color:#999;
 	font-weight: bold;
 }
-.section-two ul i{
+.section-two ul i {
 	
 }
-.active-one{
+.active-one {
 	color: #ccc;
 }
 /*第三栏闪购部分*/
-.section-three{
-	width: 1240px;
+.section-three {
+	width: 1226px;
 }
-.section-three .time{
+.section-three .time {
 	float: left;
 	width: 234px;
 	height: 339px;
@@ -365,90 +366,228 @@ input:focus{
 	border-top: 1px solid #e53935;
 	/*margin-right: 14px;*/
 }
-.section-three .time span{
+.section-three .time span {
 	display: block;
 	font-size: 21px;
     color: #ef3a3b;
     padding-top: 45px;	
 }
-.section-three .time img{
+.section-three .time img {
 	padding: 30px 0 25px 0;
 }
-.section-three .time p{
+.section-three .time p {
 	color: rgba(0,0,0,0.54);
     font-size: 15px;
 }
-.section-three .time ul{
+.section-three .time ul {
 	width: 180px;
  	margin: 30px auto;
 }
-.section-three .time ul li{
+.section-three .time ul li {
 	float: left;
 	text-align: center;
 	height: 46px;
 	line-height: 46px;
 }
-.section-three .time ul .tnum{
+.section-three .time ul .tnum {
 	width: 46px;
 	background:#605751;
 	font-size: 24px;
 }
-.section-three .time ul .mao{
+.section-three .time ul .mao {
 	width: 15px;	
 	font-size: 28px;
 }
-.img-menu{
+.goodswrap {
 	float: right;	
-	
 }
-.img-menu ul{
+.goodslist {
 	width: 992px;
 	height: 338px;
 }
-.img-menu li{
+.goods {
 	width: 234px;
 	height: 339px;
 	background: rgba(0,0,0,0.02);
+	/*background: #fafafa;*/
 	float: left;
 	text-align: center;
 	cursor: pointer;
 	margin-left: 14px;
 }
-.img-menu li img{
+ .goods img {
 	width: 160px;
 	height: 166px;
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
+	padding: 15px 0 40px 0;
 }
-.img-menu li h3{
+.goods  h3 {
 	font-size: 14px;
     color: #212121;
     font-weight: 400;
     padding-bottom: 5px;
 }
-.img-menu li .min{
+.goods  .min {
 	font-size: 12px;
 	color: #b0b0b0;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
-.img-menu li .price{
+.goods  .price {
 	color: #ff6709;
 	font-size: 14px;
 }
-.img-menu li .price span{
+.goods .price span {
 	color: #b0b0b0;
 	text-decoration: line-through;
 }
-.img-menu .menu-one{
+
+
+.img-menu .menu-one {
 	border-top: 1px solid #ffac13;
 }
-.img-menu .menu-two{
+.img-menu .menu-two {
 	border-top: 1px solid #83c44e;
 }
-.img-menu .menu-three{
+.img-menu .menu-three {
 	border-top: 1px solid #2196f3;
 }
-.img-menu .menu-four{
+.img-menu .menu-four {
 	border-top: 1px solid #e53935;
+}
+
+/*第四栏图片部分*/
+.section-four img {
+	display: block;
+    width: 1226px;
+    height: 120px;
+    padding: 40px 0 40px 0;
+    cursor: pointer;
+}
+
+.fixed {
+	position: fixed;
+	top: 300px;
+	right: 34px;
+}
+.fixed ul {
+	width: 27px;
+	height: 170px;
+}
+.fixed li {
+	width: 25px;
+	height: 39px;
+	color: #757575;
+	font-size: 40px;
+	font-weight: 500;
+	cursor: pointer;
+	text-align: center;
+	border:1px solid #f5f5f5;
+	border-top: none;
+	line-height: 20px;
+}	
+.fixed li i {
+	
+}
+.fixed li i:hover{
+	color: #ff6700;
+}
+
+
+/*几栏的大盒子背景设置*/
+.page-box{
+	width: 100%;
+	height: 2000px;
+	background: #f5f5f5;
+}
+
+.text {
+	width: 1226px;
+	height: 58px;
+	margin-top: 20px;
+	margin-left: 62px;
+}
+.text .title {
+	float: left;
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 58px;
+}
+.text ul {
+	float: right;
+	
+	text-align: center;
+}
+.text ul li {
+	float: left;
+	line-height: 58px;
+	height: 46px;
+	cursor: pointer;
+}
+
+.text ul li i {
+	background: #b0b0b0;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 50%;
+	vertical-align: 1px;
+	padding: 3px 3px 3px 3px;
+}
+.text ul li:hover{
+ 	color: #ff6709;
+}
+.text ul li i:hover { 
+	background-color: #ff6709;
+}
+
+/*第五栏手机商品展示栏*/
+.section-five {
+  width: 1226px;
+}
+.section-five>img {
+	float: left;
+	display:block;
+	width: 234px;
+	height: 614px;
+}
+.section-five .goodslist li{
+	width: 234px;
+	height: 300px;
+	background: #fff;
+	margin-bottom: 14px;
+}
+.section-five .goodslist li>img{
+	width: 160px;
+	height: 160px;
+	padding-bottom: 10px;
+}
+.section-five .goodslist li>.price{
+	line-height: 45px
+}
+
+.goodslist .flag{
+	width: 64px;
+	height: 20px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #e53935;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 20px;
+}
+.goodslist .menu-co>img{
+	padding-top: 0px;
+}
+
+.text .slide li:hover {
+	color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+.text .slide li {
+	float: left;
+	line-height: 58px;
+	height: 46px;
+	margin-left: 30px;
+	cursor: pointer;	
 }
