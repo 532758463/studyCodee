@@ -9,6 +9,7 @@ ul {
 a {
 	text-decoration: none;
 }
+
 .center {
 	margin: 0 auto;
 }
@@ -458,6 +459,9 @@ input:focus {
 }
 
 /*第四栏图片部分*/
+.section-four{
+
+}
 .section-four img {
 	display: block;
     width: 1226px;
@@ -506,7 +510,7 @@ input:focus {
 	width: 1226px;
 	height: 58px;
 	margin-top: 20px;
-	margin-left: 62px;
+
 }
 .text .title {
 	float: left;
@@ -551,18 +555,21 @@ input:focus {
 	width: 234px;
 	height: 614px;
 }
-.section-five .goodslist li{
+ .section-five .goodslist li,
+ .section-six .goodslist li{
 	width: 234px;
 	height: 300px;
 	background: #fff;
 	margin-bottom: 14px;
 }
-.section-five .goodslist li>img{
+.section-five .goodslist li>img,
+.section-six .goodslist li>img {
 	width: 160px;
 	height: 160px;
 	padding-bottom: 10px;
 }
-.section-five .goodslist li>.price{
+.section-five .goodslist li>.price,
+.section-six .goodslist li>.price {
 	line-height: 45px
 }
 
@@ -590,4 +597,79 @@ input:focus {
 	height: 46px;
 	margin-left: 30px;
 	cursor: pointer;	
+}
+
+/*第六栏*/
+.section-six {
+	width: 1226px;
+}
+
+.section-six .box-left {
+	width: 234px;
+	height: 614px;
+	float: left;
+}
+.section-six .box-left img {
+	width: 234px;
+	height: 300px;
+}
+.section-six .box-left .padtop {
+	padding-top: 10px;
+}
+.section-six .goodslist .diff {
+	background-color: #f5f5f5;
+}
+
+.section-six li .minbox{
+	width: 234px;
+	height: 143px;
+	background: #fff;
+}
+.minbox1 {
+	margin-bottom: 10px;
+	position: relative;
+}
+.minbox1 span {
+	font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+}
+.minbox1 img{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.minbox1 .price {
+	position: absolute;
+	left: 40px;
+    top: 80px;
+}
+.minbox2 {
+	position: relative;
+}
+.minbox2 h3{
+	position: absolute;
+	font-size: 20px;
+	top: 40px;
+	left: 30px;
+}
+.minbox2 p{
+	position: absolute;
+	top: 70px;
+	left: 30px;
+}
+.minbox2 i {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	color: #ff6700;
+	font-size: 50px;
+	line-height: 58px;
+	right: 40px;
+	top: 50px;
 }
