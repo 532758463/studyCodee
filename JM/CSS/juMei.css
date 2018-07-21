@@ -354,10 +354,16 @@ body{
 .section__two .list{
 	width: 1114px;
 	height: auto;
+	flex-wrap: wrap;
 	margin-top: 20px;
+	display: flex;	
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
 }
 .section__two .list li{
-	float: left;
+	/*float: left;*/
+
 	margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -407,6 +413,26 @@ body{
 	position: absolute;
 	left: -275px;
 	/*overflow: hidden;*/
+}
+.text-hide{
+	display: -webkit-flex;
+	width: 250px;
+	height: 30px;
+	justify-content: space-between;
+	/*background: green;*/
+	position: relative;
+	top: 305px;
+	left: 25px;
+	display: none;
+}
+.text-hide li{
+	font-size: 12px;
+	line-height: 30px;
+	color: #ccc;
+	cursor: pointer;
+}
+.wrap1:hover .text-hide{
+	display: -webkit-flex;
 }
 .section__three .shopgou{
 	width: 462px;
@@ -502,6 +528,7 @@ body{
 	position: fixed;
 	top: 0;
 	right: 0;
+	z-index: 2;
 }
 .fixed ul{
 	width: 40px;
@@ -634,24 +661,44 @@ body{
 
 
 
-
-/*底部编写
+hr{
+	border: 1px solid #ccc;
+}
+/*底部编写*/
 .footer {
 	width: 1349px;
 	height: 400px;
+	margin-top: 15px;
 	background: #fff;
+	position: relative;
+}
+.footer:before{
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color:#ccc;
+	position: absolute;
+	top: -14px;
 }
 .footer-top{
+	width: 100%;
+	height: 480px;
+}
+.footer-top .footer-top-img{
 	width: 1090px;
 	height: 186px;
 	position: relative;
-	left: 109px;;
+/*	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;*/
+	left: 140px;
 }
 
-.footer-top li{
+.footer-top .footer-top-img li{
 	float: left;
 	width: 130px;
 	height: 140px;
+	cursor: pointer;
+	margin-right: 22px;
 	/*background: green;*/
 }
 .footer-top li span{
@@ -681,6 +728,44 @@ body{
 	background-position: 62px 0;
 }
 
+.footer-top .column{
+	width: 1090px;
+	height: 195px;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #ccc;
+}
+/*.column li ul{
+	position: relative;
+}*/
+.column li:nth-child(1){
+	margin-bottom: 5px;
+}
+.column li{
+	width: 165px;
+	height: 22px;
+	line-height: 22px;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.5s linear initial;
+}
+.column li:not(.col1):hover{
+	color: #ed145b;
+	-webkit-animation: myAni 2s;
+}
+@keyframes myAni{
+	form{
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
+	}
+	to{
+		-webkit-transform: translateX(25px);
+		 		transform: translateX(25px);
+	}
+	
+}
+
 .footer-bottom{
 	width: 100%;
 	height: 254px;
@@ -705,4 +790,3 @@ body{
 .footer-nav li:hover{
 	color:#ccc;
 }
-
