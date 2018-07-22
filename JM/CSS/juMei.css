@@ -101,7 +101,63 @@ body{
     top: 7px;
     right: 65px;
 }
+.myJm{
+	width: 112px;
+	height: 270px;
+	position: absolute;
+	top: 26px;
+	right: 190px;
+	z-index: 2;
+	/*display: none;*/
+	opacity: 0;
+	text-align: center;
+}
+.myJm .myJm-hide{
+	width: 112px;
+	height: 270px;
+	/*background: #333;*/
+	padding-top: 8px;
+	transition: all 0.5s ease 0.5s;
+	background: #fff;
+	box-shadow: 0px 2px 1px #666;
+}
+.myJm .myJm-hide li{
+	line-height: 29px;
+	text-align: center;
+	text-indent: 15px;
+	cursor: pointer;
+}
+.myJm .myJm-hide li:hover{
+	color: #ed145b;
+}
+.header__top-right>li:nth-child(4):hover{
+	background: #fff;
+	
+	box-shadow: 0px 2px 2px #555;
+}
+.header__top-right>li:nth-child(4):hover .myJm{
 
+	transition: opacity 1s ease-out;
+	/*display: block;*/
+	opacity: 1;
+/*	-webkit-animation: opacitya ;*/
+}
+/*@keyframes opacitya{
+	from{
+		opacity: 0.8;
+	}
+	to{
+		opacity: 1;
+	}
+}*/
+.header__top-right>li:nth-child(4):hover i{
+	/*display: block;*/
+	-webkit-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+	     	transform: rotate(180deg);
+}
 /*头部中间部分*/
 .header__center{
 	width: 1090px;
@@ -743,7 +799,7 @@ hr{
 	margin-bottom: 5px;
 }
 .column li{
-	width: 165px;
+	width: 100px;
 	height: 22px;
 	line-height: 22px;
 	cursor: pointer;
@@ -760,8 +816,8 @@ hr{
 		        transform: translateX(0px);
 	}
 	to{
-		-webkit-transform: translateX(25px);
-		 		transform: translateX(25px);
+		-webkit-transform: translateX(20px);
+		 		transform: translateX(20px);
 	}
 	
 }
