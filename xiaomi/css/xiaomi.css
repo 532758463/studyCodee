@@ -9,6 +9,9 @@ ul {
 a {
 	text-decoration: none;
 }
+body{
+	overflow-x: hidden;
+}
 
 .center {
 	margin: 0 auto;
@@ -174,7 +177,7 @@ input:focus {
 
 /*content下的图片banner部分*/
 .banner {
-	position: absolute;
+	position: relative;
 	left: 284px;
 }
 .banner img {
@@ -203,7 +206,7 @@ input:focus {
 .banner .arrow-right {
 	position: absolute;
 	top: 200px;
-	right: 0px;
+	left: 951px;
 }
 .banner span i {
 	line-height: 69px;
@@ -416,6 +419,11 @@ input:focus {
 	cursor: pointer;
 	margin-left: 14px;
 }
+/*.page-box .goodslist li:hover{
+	transform: translateY(-1px);
+	transition: all 0.5s ease;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 16px 0 rgba(0, 0, 0, 0.1);
+}*/
  .goods img {
 	width: 160px;
 	height: 166px;
@@ -586,7 +594,11 @@ input:focus {
 .goodslist .menu-co>img{
 	padding-top: 0px;
 }
-
+.page-box .goodslist li:hover{
+	transform: translateY(-1px);
+	transition: all 0.5s ease;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 16px 0 rgba(0, 0, 0, 0.1);
+}
 .text .slide li:hover {
 	color: #ff6700;
     border-bottom: 2px solid #ff6700;
