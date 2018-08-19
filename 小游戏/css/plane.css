@@ -1,0 +1,99 @@
+
+/* 游戏整个场地 */
+.ground {
+    position: relative;
+    width: 510px;
+    height: 560px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    overflow: hidden;
+    /* background-image:url("../images/background/stage3.gif"); */
+    background-image: url("../images/background/stage2.gif");
+    background-repeat: repeat;
+
+}
+
+/* 玩家飞机的样式 */
+
+.plane {
+    position: absolute;
+    width: 62px;
+    height: 55px;
+    /* background-image: url("./img/planes/plane1.gif") */
+    background-repeat: no-repeat;
+    transition: all 0.1s ease;
+    z-index:2;
+}
+
+
+/* 设置子弹的样式 */
+.bullet{
+    position: absolute;
+    width:17px;
+    height: 55px;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease;
+}
+
+.enemy {
+    position: absolute;
+    z-index: 2;
+    /* width: 64px;
+    height: 56px;
+    background-image: url("./images/enemies/enemy1.gif");
+    background-repeat: no-repeat; */
+}
+
+#start {
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+}
+#end {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+.enemybullet {
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* 分数获取的样式 */
+.scores{
+    position: absolute;
+    top: 20px;
+    left: 480px;
+    font-size: 40px;
+    color: greenyellow;
+}
+
+.intorduce{
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    height: 200px;
+    text-align: center;
+    border: 1px dashed #999;
+}
+.gameover{
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    /* opacity: 0; */
+    animation: myanimation initial ease;
+    -webkit-animation: myanimation 0.5s ease ;
+    /* transition: all 0.5s ease; */
+}
+@keyframes myanimation{
+    0% {opacity: 0.1;}
+    10% {opacity: 0.2;}
+    20% {opacity: 0.3;}
+    30% {opacity: 0.4;}
+    40% {opacity: 0.5;}
+    60% {opacity: 0.6;}
+    80% {opacity: 0.7;}
+    90% {opacity: 0.9;}
+    100% {opacity: 1;}
+}
